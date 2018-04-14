@@ -67,6 +67,10 @@ protected:
 // Calculate 
 	void updateMatrix(void);
 
+    bool    m_fdvAlt;
+    void fdv_setKeyMap(Uint8 addr, Uint8 bit, bool down);
+    bool fdv_handle(SDLKey keysym, Uint8 type);
+
 // Swap ALT / DELETE settings
 	bool	m_swapAlt;
 	bool	m_swapDel;
