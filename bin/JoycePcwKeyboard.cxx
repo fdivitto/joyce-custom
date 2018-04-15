@@ -39,11 +39,11 @@
 //
 // The default PC -> PCW keymap
 //
-static Uint16 gl_defaultMap[] = { 
+static Uint16 gl_defaultMap[] = {
 	SDLK_BACKSPACE, 9, 128, 9, 128,
 	SDLK_TAB,       8, 16,  8, 16,
 //	SDLK_CLEAR,
-	SDLK_RETURN,    2, 4,   2, 4, 
+	SDLK_RETURN,    2, 4,   2, 4,
 	SDLK_ESCAPE,    1, 1,   1, 1,
 	SDLK_SPACE,     5, 128, 5, 128,
 	SDLK_QUOTE,     3, 16,  3, 16,
@@ -157,18 +157,18 @@ static Uint16 gl_defaultMap[] = {
 	SDLK_RMETA,      10,128,10,128,
 	SDLK_LMETA,      10,128,10,128,
 //	SDLK_HELP = 164,
-	SDLK_PRINT,      1, 2, 1, 2,  
+	SDLK_PRINT,      1, 2, 1, 2,
 	SDLK_SYSREQ,     1, 2, 1, 2,
 	SDLK_MENU,       16,1,16, 1,
 	SDLK_BREAK,      16,2,16, 2,
-//	SDLK_EURO,     
-	SDLK_POWER,      16,2,16,2, 
+//	SDLK_EURO,
+	SDLK_POWER,      16,2,16,2,
 	SDLK_LSUPER,     10,2,10,2,
 	SDLK_RSUPER,     10,2,10,2,
 	0
 };
 
-static unsigned char stick[] = 
+static unsigned char stick[] =
 {
 /* WADX (if LK2 is present) */
 	0x07, 0x08, 0x0C, 0x01,
@@ -196,65 +196,65 @@ static unsigned char stick[] =
 	0x07, 0x10, 0x0E, 0x01,	/* S */
 	0x07, 0x20, 0x0E, 0x01,	/* D */
 	0x06, 0x20, 0x0E, 0x01,	/* F */
-	0x06, 0x10, 0x0E, 0x01,	/* G */ 
-	0x05, 0x10, 0x0E, 0x01,	/* H */ 
-	0x05, 0x20, 0x0E, 0x01,	/* J */ 
-	0x08, 0x80, 0x0E, 0x02,	/* Z */ 
-	0x07, 0x80, 0x0E, 0x02,	/* X */ 
-	0x07, 0x40, 0x0E, 0x02,	/* C */ 
-	0x06, 0x80, 0x0E, 0x02,	/* V */ 
-	0x06, 0x40, 0x0E, 0x02,	/* B */ 
-	0x05, 0x40, 0x0E, 0x02,	/* N */ 
-	0x04, 0x40, 0x0E, 0x02,	/* M */ 
-	0x08, 0x08, 0x0E, 0x04,	/* Q */	
-	0x07, 0x04, 0x0E, 0x04,	/* E */	
-	0x04, 0x04, 0x0E, 0x04,	/* O */	
-	0x03, 0x04, 0x0E, 0x04,	/* [ */	
-	0x04, 0x10, 0x0E, 0x04,	/* L */	
-	0x03, 0x10, 0x0E, 0x04,	/* < */	
-	0x04, 0x80, 0x0E, 0x04,	/* , */	
-	0x03, 0x40, 0x0E, 0x04,	/* / */	
-	0x07, 0x08, 0x0E, 0x08,	/* W */	
-	0x06, 0x08, 0x0E, 0x08,	/* R */	
-	0x03, 0x08, 0x0E, 0x08,	/* P */	
-	0x02, 0x04, 0x0E, 0x08,	/* ] */	
-	0x03, 0x20, 0x0E, 0x08,	/* ; */	
+	0x06, 0x10, 0x0E, 0x01,	/* G */
+	0x05, 0x10, 0x0E, 0x01,	/* H */
+	0x05, 0x20, 0x0E, 0x01,	/* J */
+	0x08, 0x80, 0x0E, 0x02,	/* Z */
+	0x07, 0x80, 0x0E, 0x02,	/* X */
+	0x07, 0x40, 0x0E, 0x02,	/* C */
+	0x06, 0x80, 0x0E, 0x02,	/* V */
+	0x06, 0x40, 0x0E, 0x02,	/* B */
+	0x05, 0x40, 0x0E, 0x02,	/* N */
+	0x04, 0x40, 0x0E, 0x02,	/* M */
+	0x08, 0x08, 0x0E, 0x04,	/* Q */
+	0x07, 0x04, 0x0E, 0x04,	/* E */
+	0x04, 0x04, 0x0E, 0x04,	/* O */
+	0x03, 0x04, 0x0E, 0x04,	/* [ */
+	0x04, 0x10, 0x0E, 0x04,	/* L */
+	0x03, 0x10, 0x0E, 0x04,	/* < */
+	0x04, 0x80, 0x0E, 0x04,	/* , */
+	0x03, 0x40, 0x0E, 0x04,	/* / */
+	0x07, 0x08, 0x0E, 0x08,	/* W */
+	0x06, 0x08, 0x0E, 0x08,	/* R */
+	0x03, 0x08, 0x0E, 0x08,	/* P */
+	0x02, 0x04, 0x0E, 0x08,	/* ] */
+	0x03, 0x20, 0x0E, 0x08,	/* ; */
 	0x02, 0x08, 0x0E, 0x08, /* > */
 	0x03, 0x80, 0x0E, 0x08,	/* . */
 	0x02, 0x40, 0x0E, 0x08,	/* 1/2 */
 	0x05, 0x80, 0x0E, 0x10, /* Space */
 	0x02, 0x20, 0x0E, 0x20, /* Shift */
 /* HJKL sets */
-	0x05, 0x10, 0x0F, 0x01,	/* H */ 
-	0x05, 0x20, 0x0F, 0x01,	/* J */ 
-	0x04, 0x20, 0x0F, 0x01,	/* K */	
-	0x04, 0x10, 0x0F, 0x01,	/* L */	
-	0x03, 0x20, 0x0F, 0x01,	/* ; */	
-	0x03, 0x10, 0x0F, 0x01,	/* < */	
+	0x05, 0x10, 0x0F, 0x01,	/* H */
+	0x05, 0x20, 0x0F, 0x01,	/* J */
+	0x04, 0x20, 0x0F, 0x01,	/* K */
+	0x04, 0x10, 0x0F, 0x01,	/* L */
+	0x03, 0x20, 0x0F, 0x01,	/* ; */
+	0x03, 0x10, 0x0F, 0x01,	/* < */
 	0x02, 0x08, 0x0F, 0x01, /* > */
-	0x06, 0x40, 0x0F, 0x02,	/* B */ 
-	0x05, 0x40, 0x0F, 0x02,	/* N */ 
-	0x04, 0x40, 0x0F, 0x02,	/* M */ 
-	0x04, 0x80, 0x0F, 0x02,	/* , */	
+	0x06, 0x40, 0x0F, 0x02,	/* B */
+	0x05, 0x40, 0x0F, 0x02,	/* N */
+	0x04, 0x40, 0x0F, 0x02,	/* M */
+	0x04, 0x80, 0x0F, 0x02,	/* , */
 	0x03, 0x80, 0x0F, 0x02,	/* . */
-	0x03, 0x40, 0x0F, 0x02,	/* / */	
+	0x03, 0x40, 0x0F, 0x02,	/* / */
 	0x02, 0x40, 0x0F, 0x02,	/* 1/2 */
-	0x08, 0x08, 0x0F, 0x04,	/* Q */	
-	0x07, 0x04, 0x0F, 0x04,	/* E */	
-	0x04, 0x04, 0x0F, 0x04,	/* O */	
-	0x03, 0x04, 0x0F, 0x04,	/* [ */	
+	0x08, 0x08, 0x0F, 0x04,	/* Q */
+	0x07, 0x04, 0x0F, 0x04,	/* E */
+	0x04, 0x04, 0x0F, 0x04,	/* O */
+	0x03, 0x04, 0x0F, 0x04,	/* [ */
 	0x08, 0x20, 0x0F, 0x04,	/* A */
 	0x07, 0x20, 0x0F, 0x04,	/* D */
 	0x08, 0x80, 0x0F, 0x04,	/* Z */
 	0x07, 0x40, 0x0F, 0x04,	/* C */
-	0x07, 0x08, 0x0F, 0x08,	/* W */	
-	0x06, 0x08, 0x0F, 0x08,	/* R */	
-	0x03, 0x08, 0x0F, 0x08,	/* P */	
-	0x03, 0x04, 0x0F, 0x08,	/* [ */	
+	0x07, 0x08, 0x0F, 0x08,	/* W */
+	0x06, 0x08, 0x0F, 0x08,	/* R */
+	0x03, 0x08, 0x0F, 0x08,	/* P */
+	0x03, 0x04, 0x0F, 0x08,	/* [ */
 	0x07, 0x10, 0x0F, 0x08,	/* S */
 	0x06, 0x20, 0x0F, 0x08,	/* F */
-	0x07, 0x80, 0x0F, 0x08,	/* X */ 
-	0x06, 0x80, 0x0F, 0x08,	/* V */ 
+	0x07, 0x80, 0x0F, 0x08,	/* X */
+	0x06, 0x80, 0x0F, 0x08,	/* V */
 	0x05, 0x80, 0x0F, 0x10, /* Space */
 	0x02, 0x20, 0x0F, 0x20, /* Shift */
 };
@@ -263,8 +263,8 @@ static unsigned char stick[] =
 
 
 
-JoycePcwKeyboard::JoycePcwKeyboard(JoyceSystem *s) : 
-	PcwDevice("keyboard", "pcw"), 
+JoycePcwKeyboard::JoycePcwKeyboard(JoyceSystem *s) :
+	PcwDevice("keyboard", "pcw"),
 	PcwInput(s),
 	m_stick1("1"),
 	m_stick2("2")
@@ -372,9 +372,12 @@ struct fdv_KMAPEX_t {
     SDLKey keysym;
     bool shift;
     bool alt;
-    // PCW side: switch off
-    Uint8 off_addr;        // 0xFF nothing to switch off
-    Uint8 off_bit;         // 0xFF nothing to switch off
+		// PCW side: switch off if m_swapAlt == true
+    Uint8 off_addr_swAlt;        // 0xFF nothing to switch off
+    Uint8 off_bit_swAlt;         // 0xFF nothing to switch off
+		// PCW side: switch off if m_swapAlt == false
+		Uint8 off_addr_nswAlt;        // 0xFF nothing to switch off
+    Uint8 off_bit_nswAlt;         // 0xFF nothing to switch off
     // PCW side: switch on
     Uint8 on_addr_1;      // 0xFF nothing to switch on
     Uint8 on_bit_1;       // 0xFF nothing to switch on
@@ -386,121 +389,145 @@ static const fdv_KMAPEX_t fdv_KMAPEX[] = {
     // ':'      MAC-IT: SHIFT + '.'    PCW: SHIFT + ';'
     {SDLK_PERIOD, true, false,
         0xFF, 0xFF,     //
+				0xFF, 0xFF,     //
         0x02, 0x05,     // SHIFT down
         0x03, 0x05},    // ';' down
     // ';'      MAC-IT: SHIFT + ','    PCW: ';'
     {SDLK_COMMA, true, false,
         0x02, 0x05,     // SHIFT up
+				0x02, 0x05,     // SHIFT up
         0x03, 0x05,     // ';' down
         0xFF, 0xFF},    //
     // '\'      MAC-IT: '\'            PCW: EXTRA + '1/2'
     {SDLK_BACKSLASH, false, false,
         0xFF, 0xFF,     //
+				0xFF, 0xFF,     //
         0x0A, 0x1,      // EXTRA down
         0x02, 0x6},     // '1/2' down
     // '|'      MAC-IT: SHIFT + '\'    PCW: EXTRA + '.'
     {SDLK_BACKSLASH, true, false,
         0x02, 0x05,     // SHIFT up
+				0x02, 0x05,     // SHIFT up
         0x0A, 0x01,     // EXTRA down
         0x03, 0x07},    // '.' down
     // '&'      MAC-IT: SHIFT + '6'    PCW: SHIFT + '7'
     {SDLK_6, true, false,
         0x02, 0x05,     // SHIFT up
+				0x02, 0x05,     // SHIFT up
         0x02, 0x05,     // SHIFT down
         0x05, 0x01},    // '7' down
     // '/'      MAC-IT: SHIFT + '7'    PCW: '/'
     {SDLK_7, true, false,
         0x02, 0x05,     // SHIFT up
+				0x02, 0x05,     // SHIFT up
         0x03, 0x06,     // '/' down
         0xFF, 0xFF},    //
     // '('      MAC-IT: SHIFT + '8'    PCW: SHIFT + '9'
     {SDLK_8, true, false,
         0xFF, 0xFF,     //
+				0xFF, 0xFF,     //
         0x02, 0x05,     // SHIFT down
         0x04, 0x01},    // '9' down
     // ')'      MAC-IT: SHIFT + '9'    PCW: SHIFT + '0'
     {SDLK_9, true, false,
         0xFF, 0xFF,     //
+				0xFF, 0xFF,     //
         0x02, 0x05,     // SHIFT down
         0x04, 0x00},    // '0' down
     // '='      MAC-IT: SHIFT + '0'    PCW: '='
     {SDLK_0, true, false,
         0x02, 0x05,     // SHIFT up
+				0x02, 0x05,     // SHIFT up
         0x03, 0x00,     // '=' down
         0xFF, 0xFF},    //
     // '''      MAC-IT: '''            PCW: SHIFT + '6'
     {SDLK_QUOTE, false, false,
         0xFF, 0xFF,     //
+				0xFF, 0xFF,     //
         0x02, 0x05,     // SHIFT down
         0x06, 0x00},    // '6' down
     // '?'      MAC-IT: SHIFT + '''    PCW: SHIFT + '/'
     {SDLK_QUOTE, true, false,
         0xFF, 0xFF,     //
+				0xFF, 0xFF,     //
         0x02, 0x05,     // SHIFT down
         0x03, 0x06},    // '/' down
     // '^'      MAC-IT: SHIFT + 'ì'    PCW: EXTRA + '7'
     {(SDLKey)0xA0, true, false,   // In my system 'ì' is 0xA0
         0x02, 0x05,     // SHIFT up
+				0x02, 0x05,     // SHIFT up
         0x0A, 0x01,     // EXTRA down
         0x05, 0x01},    // '7' down
     // '['      MAC-IT: ALT + 'è'      PCW: '['
     {(SDLKey)0xA1, false, true,
-        0x0A, 0x01,     // EXTRA up (EXTRA=ALT)
+        0x0A, 0x01,     // EXTRA up (EXTRA<->ALT)
+				0x0A, 0x07,     // ALT up
         0x03, 0x02,     // '['
         0xFF, 0xFF},    //
     // ']'      MAC-IT: ALT + '+'      PCW: ']'
     {SDLK_PLUS, false, true,
-        0x0A, 0x01,     // EXTRA up (EXTRA=ALT)
+        0x0A, 0x01,     // EXTRA up (EXTRA<->ALT)
+				0x0A, 0x07,     // ALT up
         0x02, 0x01,     // ']'
         0xFF, 0xFF},    //
     // '+'      MAC-IT: '+'            PCW: SHIFT + '='
     {SDLK_PLUS, false, false,
         0xFF, 0xFF,     //
+				0xFF, 0xFF,     //
         0x02, 0x05,     // SHIFT down
         0x03, 0x00},    // '=' down
     // '*'      MAC-IT: SHIFT + '+'    PCW: SHIFT + '8'
     {SDLK_PLUS, true, false,
         0xFF, 0xFF,     //
+				0xFF, 0xFF,     //
         0x02, 0x05,     // SHIFT down
         0x05, 0x00},    // '8' down
     // '@'      MAC-IT: ALT + 'ò'      PCW: SHIFT + '1/2'
     {(SDLKey)0xA3, false, true,
-        0x0A, 0x01,     // EXTRA up (EXTRA=ALT)
+				0x0A, 0x01,     // EXTRA up (EXTRA<->ALT)
+				0x0A, 0x07,     // ALT up
         0x02, 0x05,     // SHIFT down
         0x02, 0x6},     // '1/2' down
     // '#'      MAC-IT: ALT + 'à'      PCW: '#'
     {(SDLKey)0xA2, false, true,
-        0x0A, 0x01,     // EXTRA up (EXTRA=ALT)
+				0x0A, 0x01,     // EXTRA up (EXTRA<->ALT)
+				0x0A, 0x07,     // ALT up
         0x02, 0x03,     // '#' down
         0xFF, 0xFF},    //
     // '{'      MAC-IT: SHIFT + ALT + 'è'    PCW: SHIFT + '['
     {(SDLKey)0xA1, true, true,
-        0x0A, 0x01,     // EXTRA up (EXTRA=ALT)
+				0x0A, 0x01,     // EXTRA up (EXTRA<->ALT)
+				0x0A, 0x07,     // ALT up
         0x02, 0x05,     // SHIFT down
         0x03, 0x02},    // '['
     // '{'      MAC-IT: SHIFT + ALT + '+'    PCW: SHIFT + '['
     {SDLK_PLUS, true, true,
-        0x0A, 0x01,     // EXTRA up (EXTRA=ALT)
+				0x0A, 0x01,     // EXTRA up (EXTRA<->ALT)
+				0x0A, 0x07,     // ALT up
         0x02, 0x05,     // SHIFT down
         0x02, 0x01},    // ']'
     // '°'      MAC-IT: SHIFT + 'à'          PCW: EXTRA + '5'
     {(SDLKey)0xA2, true, false,
         0x02, 0x05,     // SHIFT up
+				0x02, 0x05,     // SHIFT up
         0x0A, 0x01,     // EXTRA down
         0x06, 0x01},    // '5'
     // '~'      MAC-IT: ALT + '5'            PCW: EXTRA + '-'
     {SDLK_5, false, true,
-        0x0A, 0x01,     // EXTRA up (EXTRA=ALT)
+				0x0A, 0x01,     // EXTRA up (EXTRA<->ALT)
+				0x0A, 0x07,     // ALT up
         0x0A, 0x01,     // EXTRA down
         0x03, 0x01},    // '-'
     // '<'      MAC-IT: '<'                  PCW: SHIFT + '§'
     {SDLK_LESS, false, false,
         0xFF, 0xFF,     //
+				0xFF, 0xFF,     //
         0x02, 0x05,     // SHIFT down
         0x03, 0x04},    // '§'
     // '>'      MAC-IT: SHIFT + '<'          PCW: SHIFT + '#'
     {SDLK_LESS, true, false,
         0x02, 0x05,     // SHIFT up
+				0x02, 0x05,     // SHIFT up
         0x02, 0x05,     // SHIFT down
         0x02, 0x03},    // '#'
 };
@@ -537,8 +564,13 @@ bool JoycePcwKeyboard::fdv_handle(SDLKey keysym, Uint8 type)
         for (int i = 0; i < sizeof(fdv_KMAPEX) / sizeof(fdv_KMAPEX_t); ++i)
             if (fdv_KMAPEX[i].keysym == keysym && fdv_KMAPEX[i].shift == m_trueShift && fdv_KMAPEX[i].alt == m_fdvAlt)
             {
-                if (fdv_KMAPEX[i].off_addr != 0xFF)
-                    fdv_setKeyMap(fdv_KMAPEX[i].off_addr, fdv_KMAPEX[i].off_bit, type != SDL_KEYDOWN);
+								// switch off (if m_swapAlt == true)
+                if (m_swapAlt && fdv_KMAPEX[i].off_addr_swAlt != 0xFF)
+                    fdv_setKeyMap(fdv_KMAPEX[i].off_addr_swAlt, fdv_KMAPEX[i].off_bit_swAlt, type != SDL_KEYDOWN);
+								// switch off (if m_swapAlt == false)
+								if (!m_swapAlt && fdv_KMAPEX[i].off_addr_nswAlt != 0xFF)
+                    fdv_setKeyMap(fdv_KMAPEX[i].off_addr_nswAlt, fdv_KMAPEX[i].off_bit_nswAlt, type != SDL_KEYDOWN);
+								// switch on (down)
                 if (fdv_KMAPEX[i].on_addr_1 != 0xFF)
                     fdv_setKeyMap(fdv_KMAPEX[i].on_addr_1, fdv_KMAPEX[i].on_bit_1, type == SDL_KEYDOWN);
                 if (fdv_KMAPEX[i].on_addr_2 != 0xFF)
@@ -559,15 +591,15 @@ int JoycePcwKeyboard::handleEvent(SDL_Event &e)
 	SDLKey keysym = SDLK_UNKNOWN;
 	Uint8 shiftLock = m_pcwKeyMap[8] & 0x40;
 
-	if (e.type == SDL_KEYDOWN || e.type == SDL_KEYUP) 
+	if (e.type == SDL_KEYDOWN || e.type == SDL_KEYUP)
 	{
 		b = (e.type == SDL_KEYDOWN);
-		keysym = e.key.keysym.sym; 
+		keysym = e.key.keysym.sym;
 
 //		printf("Key event: b=%d keysym=%d\n", b, keysym);
 	}
 
-	if (keysym == SDLK_F2 || keysym == SDLK_F4 || 
+	if (keysym == SDLK_F2 || keysym == SDLK_F4 ||
 	    keysym == SDLK_F6 || keysym == SDLK_F8) m_autoShift = b;
 
 	if (keysym == SDLK_LSHIFT || keysym == SDLK_RSHIFT) m_trueShift = b;
@@ -578,7 +610,7 @@ int JoycePcwKeyboard::handleEvent(SDL_Event &e)
 	switch(e.type)
 	{
 		case SDL_QUIT: rv = -99; break;
-		case SDL_KEYDOWN:  
+		case SDL_KEYDOWN:
 			km = m_keybMap + 4 * keysym;
 			m_pcwKeyMap[km[0]] |= km[1];
 			m_keyPress = true;
@@ -653,10 +685,10 @@ void JoycePcwKeyboard::poll(Z80 *R)
 
 	m_ticker++;
 
-	// Keyboard ticker. Bit 7 set if keyboard is currently sending 
-	// data, reset if scanning keys. Bit 6 toggles with each data 
-	// transmission, i.e. at half the rate of bit 7. 
-	// Timings are, in all probability, miles adrift, but no PCW 
+	// Keyboard ticker. Bit 7 set if keyboard is currently sending
+	// data, reset if scanning keys. Bit 6 toggles with each data
+	// transmission, i.e. at half the rate of bit 7.
+	// Timings are, in all probability, miles adrift, but no PCW
 	// software seems to depend on them.
 	//
 	m_pcwKeyMap[15] &= 0x3F;
@@ -672,10 +704,10 @@ void JoycePcwKeyboard::poll(Z80 *R)
 	// [2.2.4] Calculate the bits of keyboard RAM that depend on other
 	// bits (and on the option links).
 	updateMatrix();
-	for (int k = 0; k < 16; k++) 
+	for (int k = 0; k < 16; k++)
 	{
                 PCWRAM[0xFFF0+k]  = m_pcwKeyMap[k];
-	}	
+	}
 	// XXX These specials may need to go elsewhere...
         if (m_pcwKeyMap[0x10]&1)
         {
@@ -764,7 +796,7 @@ UiEvent JoycePcwKeyboard::settings(UiDrawer *d)
 	UiEvent uie;
 	int sel = -1;
 
-	uim.add(new UiLabel    ("   Keyboard settings   ", d)) 
+	uim.add(new UiLabel    ("   Keyboard settings   ", d))
 	   .add(new UiSeparator(d))
 	   .add(new UiSetting  (SDLK_a,false, "  PC ALT is PCW ALT    ", d))
            .add(new UiSetting  (SDLK_e,false, "  PC ALT is PCW EXTRA  ", d))
@@ -780,8 +812,8 @@ UiEvent JoycePcwKeyboard::settings(UiDrawer *d)
 	   .add(new UiSetting  (SDLK_3,m_lk3,  "  Link LK3 ", d))
 	   .add(new UiSeparator(d))
            .add(new UiCommand  (SDLK_ESCAPE,  "  EXIT", d));
- 
-	d->centreContainer(uim);	
+
+	d->centreContainer(uim);
 	do
 	{
 		((UiSetting &)uim[2]).setChecked(!m_swapAlt);
@@ -802,10 +834,10 @@ UiEvent JoycePcwKeyboard::settings(UiDrawer *d)
 			case 3: m_swapAlt = 1; break;
 			case 5: m_swapDel = 0; break;
 			case 6: m_swapDel = 1; break;
-			case 8: uie = m_stick1.settings(d); 
+			case 8: uie = m_stick1.settings(d);
 				if (uie == UIE_QUIT) return uie;
 				break;
-			case 9: uie = m_stick2.settings(d); 
+			case 9: uie = m_stick2.settings(d);
 				if (uie == UIE_QUIT) return uie;
 				break;
 			case 11: m_lk1 = !m_lk1; break;
@@ -824,7 +856,7 @@ UiEvent JoycePcwKeyboard::settings(UiDrawer *d)
 bool JoycePcwKeyboard::parseNode(xmlDocPtr doc, xmlNsPtr ns, xmlNodePtr cur)
 {
 	xmlChar *s = xmlGetProp(cur, (xmlChar *)"swapctrl");
-	
+
 	if (s) { m_swapAlt = atoi((char *)s) ? true : false; xmlFree(s); }
 	s = xmlGetProp(cur, (xmlChar *)"swapdel");
 	if (s) { m_swapDel = atoi((char *)s) ? true : false; xmlFree(s); }
@@ -843,10 +875,10 @@ bool JoycePcwKeyboard::parseNode(xmlDocPtr doc, xmlNsPtr ns, xmlNodePtr cur)
 			continue;
 		s = xmlGetProp(child, (xmlChar *)"name");
 		if (s == NULL) continue;
-		if (!strcmp((char *)s, "1")) m_stick1.parseNode(doc, ns, child);	
+		if (!strcmp((char *)s, "1")) m_stick1.parseNode(doc, ns, child);
 		if (!strcmp((char *)s, "2")) m_stick2.parseNode(doc, ns, child);
-		xmlFree(s);	
-	}	
+		xmlFree(s);
+	}
 	return true;
 }
 
@@ -870,14 +902,14 @@ bool JoycePcwKeyboard::storeNode(xmlDocPtr doc, xmlNsPtr ns, xmlNodePtr cur)
 			continue;
 		s = xmlGetProp(child, (xmlChar *)"name");
 		if (s == NULL) continue;
-		if (!strcmp((char *)s, "1")) 
+		if (!strcmp((char *)s, "1"))
 		{
-			m_stick1.storeNode(doc, ns, child);	
+			m_stick1.storeNode(doc, ns, child);
 			found1 = true;
 		}
-		if (!strcmp((char *)s, "2")) 
+		if (!strcmp((char *)s, "2"))
 		{
-			m_stick2.storeNode(doc, ns, child);	
+			m_stick2.storeNode(doc, ns, child);
 			found2 = true;
 		}
 		xmlFree(s);
@@ -888,15 +920,13 @@ bool JoycePcwKeyboard::storeNode(xmlDocPtr doc, xmlNsPtr ns, xmlNodePtr cur)
 		xmlSetProp(child, (xmlChar *)"name", (xmlChar *)"1");
 		m_stick1.storeNode(doc, ns, child);
 		xmlAddChild(cur, child);
-	}	
+	}
 	if (!found2)
 	{
 		child = xmlNewNode(ns, (xmlChar *)"joystick");
 		xmlSetProp(child, (xmlChar *)"name", (xmlChar *)"2");
 		m_stick2.storeNode(doc, ns, child);
 		xmlAddChild(cur, child);
-	}	
+	}
 	return true;
 }
-
-
